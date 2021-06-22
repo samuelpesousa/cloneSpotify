@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <title>Spotify   -  Samuel</title>
+    <link rel="stylesheet" href="css/style.css" >
+</head>
+<body>
+   <div class="sidebar">
+      <div class="sidebar-wraper">
+          <div class="sidebar-logo">
+              <img src="imagens/logo.png" />
+          </div>
+          <div class="sidebar-menu">
+              <a class="selecionado" href=""><i class="fas fa-home"></i>Início</a>
+              <a href=""><i class="fas fa-search"></i>Buscar</a>
+              <a href=""><i class="fas fa-database"></i>Biblioteca</a>
+          </div>
+          <div class="sidebar-menu">
+              <p class="sidebar-menu-title">Playlist</p>
+          
+               <div class="sidebar-menu-item">
+                   <div class="sidebar-menu-componente">
+                       +
+                   </div>
+                   <span>Criar uma Playlist</span>
+               </div>
+
+               <div class="sidebar-menu-item">
+                    <div class="sidebar-menu-componente">
+                        +
+                    </div>
+                <span>Musicas Curtidas</span>
+            </div>
+          
+          </div>
+          <div class="sidebar-playlists">
+              <a href="">Playlist 1</a>
+              <a href="">Playlist 2</a>
+              <a href="">Playlist 3</a>
+              <a href="">Playlist 4</a>
+              <a href="">Playlist 5</a>
+          </div>
+
+          
+      </div>
+      </div>
+
+    </div>
+
+
+      <div class="main">
+       <div class="main-wraper">
+
+           <div class="main-row">
+
+
+             
+                <div class="main-col" data-image="imagens/acdc.jpg" data-artist="acdc" data-song="Black in Black" data-file="assets/blackinblack.mp3" >
+                    <img src="imagens/imagem1.jpg" />
+                    <h3>Ac/Dc</h3>
+                    <p>Black in Black</p>
+                </div>
+                <div class="main-col" data-image="imagens/franksinatra.jpg" data-artist="Frank Sinatra" data-song="That's Life" data-file="assets/thatslife.mp3">
+                    <img src="imagens/imagem2.jpg" />
+                    <h3>Frank Sinatra</h3>
+                    <p>That's Life</p>
+                </div>
+                <div class="main-col">
+                    <img src="imagens/imagem1.jpg" />
+                    <h3>As 50 Mais Tocadas</h3>
+                    <p>Aqui vai a descrição da minha musica...</p>
+                </div>
+                <div class="main-col">
+                    <img src="imagens/imagem1.jpg" />
+                    <h3>As 50 Mais Tocadas</h3>
+                    <p>Aqui vai a descrição da minha musica...</p>
+                </div>
+
+                </div>
+           </div>
+    </div>
+
+
+    <div class="player">
+        <div class="player-artist">
+
+        </div>
+        <div class="player-control">
+             <div class="player-control-button">
+                 <a href=""><i class="fas fa-backward"></i></a>
+                 <a style="display: none;" id="pauseBtn" href=""><i class="far fa-pause-circle"></i></a>
+                 <a id="playBtn" href=""><i class="far fa-play-circle"></i></a>
+                 <a href=""><i class="fas fa-forward"></i></a>
+             </div>
+
+             <div class="player-control-progress">
+                 <div style="width: 0%;" id="progress" class="player-control-progress-2">
+
+                 </div>
+             </div>
+        </div>
+    </div>
+
+    <audio id="audioplayer" style="position: absolute; left: 0; top: 0; z-index: -999; opacity: 0;" controls="">
+        
+    </audio>
+   
+
+<script src="js/all.min.js"> </script>
+
+<script src="js/music.js">
+</script>
+</body>
+</html>
